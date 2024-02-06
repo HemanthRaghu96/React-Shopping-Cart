@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Card = ({ count, setCount, data }) => {
   // Destructuring data from Props
 
-  const { name, rating, price, sale } = data;
+  const { name, rating, price, sale, button } = data;
 
   // State variable for Button change
 
@@ -30,7 +30,7 @@ const Card = ({ count, setCount, data }) => {
   };
   return (
     <section>
-      <div className="rounded overflow-hidden  shadow-xl  border border-slate-400 relative w-5/6 min-h-96 ">
+      <div className="rounded overflow-hidden  shadow-md  border-slate-400 relative w-11/12 min-h-96 ">
         <img
           src={require("./images/cardimage.jpg")}
           alt="Banner"
@@ -63,12 +63,18 @@ const Card = ({ count, setCount, data }) => {
 
           {/* Card item Add/Remoce handle button click */}
 
-          <button
-            className="text-base font-poppins p-1 border border-black rounded m-2  absolute bottom-4"
-            onClick={(e) => handleClick(e)}
-          >
-            {buttonText}
-          </button>
+          {button !== "View option" ? (
+            <button
+              className="text-base font-poppins p-1 border border-black rounded m-2  absolute bottom-4 hover:bg-black hover:text-white"
+              onClick={(e) => handleClick(e)}
+            >
+              {buttonText}
+            </button>
+          ) : (
+            <button className="text-base font-poppins p-1 border border-black rounded m-2  absolute bottom-4 hover:bg-black hover:text-white">
+              View options
+            </button>
+          )}
         </div>
 
         {/* Card item sale */}
@@ -76,7 +82,7 @@ const Card = ({ count, setCount, data }) => {
           className={
             sale === null
               ? "hidden"
-              : "absolute top-1 right-1 rounded-md bg-black  px-2 text-white text-sm font-medium"
+              : "absolute top-1 right-1 md:top-2 md:right-2 rounded-md bg-black  px-2 text-white text-sm font-medium"
           }
         >
           {sale}
