@@ -32,7 +32,7 @@ const Card = ({ count, setCount, data }) => {
     <section>
       <div className="rounded overflow-hidden  shadow-md  border-slate-400 relative w-11/12 min-h-96 ">
         <img
-          src={require("./images/cardimage.jpg")}
+          src={require("../images/cardimage.jpg")}
           alt="Banner"
           className="w-full object-cover "
         />
