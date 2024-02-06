@@ -6,7 +6,7 @@ If item is added the value is added to Cart and if item is removed value is remo
 I have used React JSX for design and functionality ,Tailwindcss for styling.\
 My Shopping Cart is responsive can use in small to large phone,tablet,laptop and desktop.
 
-Live  App Demo: https://65c1387acef48a09d50402ee--incomparable-llama-50bee5.netlify.app/
+Live  App Demo: https://react-shopping-e-cart.netlify.app/
 
 This project is open scorce,\
 🚀 Give a Star ⭐️ & Fork to this project ... Happy coding! 🤩`
