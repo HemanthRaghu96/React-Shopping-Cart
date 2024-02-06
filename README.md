@@ -1,15 +1,15 @@
 # React Shopping Card 
-My shopping cart display product image,name,rating and price.
-And it allow user to add and remove items from the Cart.
-If item is added the value is added to Cart and if item is removed value is removed fromthe Cart.
-I have used React JSX for design and functionality ,Tailwindcss for styling.
-My Shopping Cart is responsive can use in small to large phone,tablet,laptop and desktop.
+
+My shopping cart display product image,name,rating and price.\
+And it allow user to add and remove items from the Cart.\
+If item is added the value is added to Cart and if item is removed value is removed fromthe Cart.\
+I have used React JSX for design and functionality ,Tailwindcss for styling.\
+My Shopping Cart is responsive can use in small to large phone,tablet,laptop and desktop.\
 
 Live  App Demo: https://65c1387acef48a09d50402ee--incomparable-llama-50bee5.netlify.app/
 
-This project is open scorce,
+This project is open scorce,\
 🚀 Give a Star ⭐️ & Fork to this project ... Happy coding! 🤩`
-
 
 # Getting Started with Create React App
 
