@@ -65,7 +65,7 @@ const Card = ({ count, setCount, data }) => {
 
           {button !== "View option" ? (
             <button
-              className="text-base font-poppins p-1 border border-black rounded m-2  absolute bottom-4 hover:bg-black hover:text-white"
+              className= {changeButton?"text-base font-poppins p-1 border bg-red-400 text-white rounded m-2  absolute bottom-4 hover:bg-black hover:text-white":"text-base font-poppins p-1 border border-black rounded m-2  absolute bottom-4 hover:bg-black hover:text-white"}
               onClick={(e) => handleClick(e)}
             >
               {buttonText}
