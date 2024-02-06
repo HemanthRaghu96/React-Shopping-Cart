@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import DropDownMenu from "./DropdownMenu";
 
 const Header = ({count}) => {
+
+  // state variables for opening burger icon in small and medium screens.
+
   const [open, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(!open);
@@ -9,7 +12,13 @@ const Header = ({count}) => {
   return (
     <header>
       <nav className="mt-4">
+
+      {/* Main Div Container */}
+
         <div className="lg:flex justify-between w-5/6 lg:max-w-7xl mx-auto ">
+
+        {/* Div contains Title */}
+
           <div className="flex justify-between ">
           <div className="p-2">
             <span className="font-poppins text-slate-900 font-normal text-2xl whitespace-nowrap ">
@@ -17,6 +26,9 @@ const Header = ({count}) => {
               E-Cart
             </span>
             </div>
+
+            {/* Div contain Button and its functionality */}
+
             <div className="lg:hidden p-2 m-1">
               <button onClick={handleClick}>
                 <svg
@@ -36,6 +48,9 @@ const Header = ({count}) => {
               </button>
             </div>
           </div>
+
+          {/* Div contains Menu and Cart details */}
+
           <div className={`lg:flex justify-between w-full lg:max-w-6xl mx-auto ${open?'block':'hidden'}`}>
             <div className="lg:block justify-start">
               <ul className="lg:flex lg:space-x-6 space-y-0 ">
@@ -50,6 +65,9 @@ const Header = ({count}) => {
                 </li>
               </ul>
             </div>
+
+            {/* Cart design and functionality, update the add/remove operations are done */}
+            
             <div className="lg:block justify-start ">
               <button className="lg:flex space-x-2 border-black border-2 px-3 py-2 rounded-md m-2">
                 <svg

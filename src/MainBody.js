@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "./Card";
-// import TaskCard from './Taskcard';
-// import Count from './Count'
 
 const MainBody = ({ count, setCount }) => {
+
+  //Data provided to Card items.
   const data = [
     {
       id: 1,
@@ -62,8 +62,12 @@ const MainBody = ({ count, setCount }) => {
       sale: null,
     },
   ];
+
   return (
     <main>
+
+    {/* Banner detailes */}
+
       <div className="h-72 bg-black flex flex-col items-center justify-center">
         <h1 className="text-3xl font-poppins text-white md:text-6xl font-black">
           Shop in style
@@ -73,8 +77,16 @@ const MainBody = ({ count, setCount }) => {
         </p>
       </div>
       <div className="grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 m-12 w-4/5 mx-auto">
+
+      {/* Card mapping is done to all the data provided. */}
+      {/* Passing Props to Card */}
         {data.map((data) => (
-          <Card key={data.id} data={data} count={count} setCount={setCount} />
+          
+          <Card 
+          key={data.id} 
+          data={data} 
+          count={count} 
+          setCount={setCount} />
         ))}
       </div>
     </main>
